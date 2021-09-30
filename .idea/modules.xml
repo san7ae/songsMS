@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/api-Gateway/api-Gateway.iml" filepath="$PROJECT_DIR$/api-Gateway/api-Gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/auth/auth.iml" filepath="$PROJECT_DIR$/auth/auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/new/new.iml" filepath="$PROJECT_DIR$/new/new.iml" />
+      <module fileurl="file://$PROJECT_DIR$/songs/songs.iml" filepath="$PROJECT_DIR$/songs/songs.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/songsMS.iml" filepath="$PROJECT_DIR$/.idea/songsMS.iml" />
     </modules>
   </component>
