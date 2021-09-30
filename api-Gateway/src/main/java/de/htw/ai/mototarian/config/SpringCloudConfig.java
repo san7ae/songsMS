@@ -19,6 +19,9 @@ public class SpringCloudConfig {
                 .route(r -> r.path("/songsWS-momotarian/rest/auth/**")
                         .uri("lb://AUTH-SERVICE")
                         .id("authModule"))
+                .route(r -> r.path("/songsWS-momotarian/rest/new/**")
+                        .uri("lb://NEW-SERVICE")
+                        .id("authModule"))
                 .build();
     }
 

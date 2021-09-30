@@ -89,7 +89,7 @@ public class UserControllerDI {
     public boolean isTokenValid(@PathVariable(value="token") String token){
         try {
             authService.getUserByToken(token);
-//            System.out.println("token valid");
+            System.out.println("token valid");
             return true;
         } catch (NotFoundException e) {
             e.printStackTrace();

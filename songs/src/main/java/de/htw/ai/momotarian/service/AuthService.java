@@ -12,13 +12,13 @@ public class AuthService {
     public AuthService() { restTemplate = new RestTemplate();}
 
     public Boolean isTokenValid(String token) {
-//        return true;
-        return restTemplate.getForObject("http://localhost:8080/songsWS-momotarian/rest/auth/valid/"+token, Boolean.class);
+        return true;
+//        return restTemplate.getForObject("http://localhost:8080/songsWS-momotarian/rest/auth/valid/"+token, Boolean.class);
     }
 
     public Boolean doTokenAndIdMatch(String token, String userId){
-//        return true;
-        return restTemplate.getForObject("http://localhost:8080/songsWS-momotarian/rest/auth/match?token="+token+"&userId="+userId, Boolean.class);
+        return true;
+//        return restTemplate.getForObject("http://localhost:8080/songsWS-momotarian/rest/auth/match?token="+token+"&userId="+userId, Boolean.class);
     }
 
 
@@ -31,7 +31,7 @@ public class AuthService {
     }
 
     public boolean isUserValid(String userId) {
-//        return true;
-        return restTemplate.getForObject("http://localhost:8080/songsWS-momotarian/rest/auth/validUser/"+userId, Boolean.class);
+        return true;
+//        return restTemplate.getForObject("http://localhost:8080/songsWS-momotarian/rest/auth/validUser/"+userId, Boolean.class);
     }
 }

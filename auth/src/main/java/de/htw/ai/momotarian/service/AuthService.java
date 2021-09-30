@@ -16,7 +16,7 @@ public class AuthService implements IAuthService {
 
     @Override
     public User getUserByToken(String token) throws NotFoundException{
-        ArrayList<User> userList = (ArrayList<User>) repository.findAll();
+        ArrayList<User> userList = (ArrayList<User>) repository.findUserByToken(token);
         for (User u: userList){
             if(u.getToken()!=null) {
                 if (u.getToken().equals(token)) {
